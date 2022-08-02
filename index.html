@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.GIS Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/454848ce4c.js" crossorigin="anonymous"></script>
+    <script>
+        function toggle() {
+        var header = document.getElementById("header");
+        header.classList.toggle("active");
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        let menu = document.querySelectorAll(".header-menu li a:not([href='#'])");
+        for (let rj = 0; rj < menu.length; rj++) {
+            menu[rj].onclick = function () {
+                document.querySelector(".toggle").click();
+            };
+          }
+        });
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <nav id="nav">
+                <div class="header-logo">
+                    <h1 class="logo"><a href="#">.GIS</a></h1>
+                </div>
+                <ul class="header-menu">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#project">Project</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="toggle" onclick="toggle()"></div>
+            </nav>
+            <div class="headline">
+                <section>
+                    <h3>Looking for Geospatial Enthusiast</h3>
+                    <h1>.GIS Developer</h1>
+                    <p>"It's me, Romi Julianto"</p>
+                    <a href="#project"><button class="gohire" type="button">Hire me
+                        </button></a>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article id="about">
+            <div class="wrapper">
+                <h2>About</h2>
+                <div class="flex-about">
+                    <div class="desc">
+                        <p><strong>Romi Julianto</strong>
+                            An intelligent, professional, disciplined, and focussed Big Data Analysis and Web Development.
+                            Motivated and reliable with the proven success of surveying, analyzing, computing, and 
+                            integrating the data, especially in surveying and mapping: topographic mapping, geodetic 
+                            mapping, deformation survey, etc. Advanced-performance in technical solutions to find the 
+                            problem with analytical and critical thinking. A high achiever Construction Engineer with 
+                            survey and IT skills, who continuously contribute as a surveying and mapping assistant in 
+                            college. Currently looking for a challenge in Engineering Company where I can contribute 
+                            to survey.
+                        </p>
+                        <br>
+                        <p><strong>Romi Julianto</strong>
+                            Highly interested in Construction with 4+ position as an assistant lecturer of construction 
+                            and survey during college and combined construction experience including: contruction survey, 
+                            land surveying, cartography, 3D cadaster, elementary surveying, photogrammetry, and lidar 
+                        </p>
+                        <div class="moredetail">
+                            <a href="https://romyjulians.wixsite.com/portofolioromi/projects" target="_blank"
+                                rel="noopener noreferrer">view full biography <span>&#8594;</span></a></div>
+                    </div>
+                    <div class="desc-image"></div>
+                </div>
+            </div>
+        </article>
+
+        <div class="background-image">
+            <div class="quote-text wrapper">
+                <p class="quote">" Never stop learning, When you stop, <strong>you lose."</strong></p>
+                <p class="quote-by">-Romi Julianto</p>
+            </div>
+        </div>
+
+
+        <article id="project">
+            <div class="wrapper">
+                <h2>PROJECT</h2>
+                <div class="project-flex">
+                    <div class="item">
+                        <img src="image/project1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/project2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/project3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/project4.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/project5.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="image/project7.jpg" alt="">
+                    </div>
+                </div>
+        </article>
+
+        <div class="contact-about">
+            <div class="wrapper">
+                <article id="contact" class="card gradient2">
+                    <section>
+                        <h2>Contact</h2>
+                        <p>Contact me for more detail project and sharing</p>
+                        <form>
+                            <ul class="contact-form">
+                                <div class="input-form">
+                                    <div class="form-group">
+                                        <li><label>Full Name <span class="required">*</span></label><input type="text"
+                                                name="field1" class="field-divided" placeholder="Full name" /></li>
+                                        <li>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email <span class="required">*</span></label>
+                                        <input type="email" name="field2" placeholder="mail@email.com"
+                                            class="field-long" />
+                                        </li>
+                                        <li>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your Message <span class="required">*</span></label>
+                                        <textarea name="field3" id="field3" class="field-long field-textarea"
+                                            placeholder="Input your message here"></textarea>
+                                        </li>
+                                    </div>
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="btn-submit">
+                                                <input class="submit" type="submit" value="Submit" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+
+                        </form>
+                    </section>
+                </article>
+
+                <aside>
+                    <article id="profile" class="card gradient2">
+                        <div class="content-profile">
+                            <section>
+                                <h2>Author</h2>
+                                <img src="image/profil-romi.jpg" alt="">
+                                <p class="name">Romi Julianto</p>
+                                <p class="address">
+                                    <i class="fa fa-map-marker-alt"></i>Lampung Selatan, Lampung</p>
+                                <p class="email">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:romyjulians@gmail.com">romyjulians@gmail.com</a></p>
+                                <p class="phone">
+                                    <i class="fa fa-phone-alt"></i>
+                                    <a href="https://wa.me/6281366775040"
+                                        target="_blank">
+                                        0813-6677-5040</a></p>
+                                <div class="social">
+                                    <ul class="social-icons">
+                                        <li class="social-icons-fa-github"><a href="https://github.com/romijulianto/"
+                                                target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+                                        </li>
+                                        <li class="social-icons-linkedin"><a href="https://www.linkedin.com/in/romijulianto/"
+                                                target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                        <li class="social-icons-twitter"><a href="https://twitter.com/romijuliantoo"
+                                                target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li class="social-icons-glone"><a href="https://romyjulians.wixsite.com/portofolioromi/"
+                                                target="_blank" title="Website"><i class="fa fa-globe"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <p>Ptoject Individu A13 Kelas 6 Golang - Romi Julianto</p>
+    </footer>
+</body>
+</html>
